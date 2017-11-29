@@ -32,8 +32,19 @@ public class Main {
         
         PSEUDOCODE for entering D minutes all at once
         
+        *** Thinking of the clock as a single integer ***
+        The time shown on the clock can be given as a single integer in order to determine if the digits follow an arithmetic sequence
+        When the last two digits reach 60 the clock must be programmed to change to the next hour 
+            (for 1 --> 11, this can be done by adding 100 and subtracting 60)
+            (for 12 --> 1, the clock can subtract 1160 in order to return back to 12:00)
+            In this problem, it is irrelevant whether the clock is in AM or PM, only the number of times an arithmetic sequence is present matters
+        Through an initial test, it can be determined how many arithmetic sequences appear in one full cycle from 12:00 --> 11:59
+        
         
         */
+        
+        
+        
         
         
     }
