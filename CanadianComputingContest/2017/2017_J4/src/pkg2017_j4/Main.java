@@ -5,6 +5,8 @@
  */
 package pkg2017_j4;
 
+import java.util.Scanner;
+
 /**
  * title: Canadian Computing Contest J4: Favorite Times
  * author: Pranay Kotian
@@ -38,13 +40,40 @@ public class Main {
             (for 1 --> 11, this can be done by adding 100 and subtracting 60)
             (for 12 --> 1, the clock can subtract 1160 in order to return back to 12:00)
             In this problem, it is irrelevant whether the clock is in AM or PM, only the number of times an arithmetic sequence is present matters
-        Through an initial test, it can be determined how many arithmetic sequences appear in one full cycle from 12:00 --> 11:59
+        Through an initial test, it can be determined how many arithmetic sequences appear in one full cycle from 12:00 --> 11:59 and a simple division and remainer
+            system can determine how many loops there are and simply calculate the remainder
+        
         
         
         */
         
+        Scanner sc = new Scanner (System.in);
+        int D = Integer.parseInt(sc.nextLine());
+        //Input duration from user
         
+        int t = 1200;
+        //Current time
         
+        //loop that will check for an arithmetic series in the digit of the t (time) variable
+        for (int i=0; i <=D; i++){
+            
+            int l = String.valueOf(D).length();
+            //This determines the length of the current number
+            
+            //Exit conditions for the D variables
+            
+            
+            
+            if () {
+                
+            }
+            else if (D == 1159){
+                D = 1200;
+            }
+            else
+                D++;
+            
+        }
         
         
     }
