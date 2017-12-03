@@ -54,22 +54,46 @@ public class Main {
         int t = 1200;
         //Current time
         
+        int c = 0;
+        //Counter variable that will note the number of times an arithmetic series is created in the time
+        
         //loop that will check for an arithmetic series in the digit of the t (time) variable
-        for (int i=0; i <=D; i++){
+        for (int i=0; i <D; i++){
             
             int l = String.valueOf(D).length();
             //This determines the length of the current number
+            int L2 = 0;
+            int L1 = 0; 
+            int L3 = 0;
+            int L4 = 0; 
             
+            if (l == 3) {
+                L3 = Character.getNumericValue((String.valueOf(D)).charAt(1)); 
+                L2 = Character.getNumericValue((String.valueOf(D)).charAt(2));
+                L1 = Character.getNumericValue((String.valueOf(D)).charAt(3));
+                
+                if ((L3-L2)==(L2-L1))
+                    c++;
+            }
+            else if (l == 4) { 
+                L4 = Character.getNumericValue((String.valueOf(D)).charAt(1)); 
+                L3 = Character.getNumericValue((String.valueOf(D)).charAt(2)); 
+                L2 = Character.getNumericValue((String.valueOf(D)).charAt(3));
+                L1 = Character.getNumericValue((String.valueOf(D)).charAt(4));
+                
+                if ((L4-L3)==(L3-L2)&&(L3-L2)==(L2-L1))
+                    c++; 
+            }
+                      
             //Exit conditions for the D variables
             
+            //Determines the last two digits of the time in order to determine if it is time to change the hour
+            // (if the last digits are 59)
             
-            
-            if () {
-                
-            }
-            else if (D == 1159){
-                D = 1200;
-            }
+            if (D == 1259)
+                D = 100;
+            else if ((L2 == 5) && (L1 == 9)) 
+                D+=41;
             else
                 D++;
             
