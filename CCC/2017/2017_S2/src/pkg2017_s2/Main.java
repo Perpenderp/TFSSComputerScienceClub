@@ -5,6 +5,8 @@
  */
 package pkg2017_s2;
 
+import java.util.Scanner;
+
 /**
  * title: Canadian Computing Contest 2017 S2
  * author: Pranay Kotian
@@ -34,12 +36,31 @@ public class Main {
         use quicksort to sort values in array
         
         if (N%2 = 1) 
-            range of 0 - (n/2 + 1) will be low tide
-            range of (n/2 + 2) - (n-1)(last value in array) will be high tide
+            range of 0 - (n/2) will be low tide
+            range of (n/2 + 1) - (n-1)(last value in array) will be high tide
         else (dataset is even)
-            
+            range of 0 - (n/2 - 1) will be low tide
+            range of (n/2)-(n-1) will be high tide values
+        
+        what I need to learn:
+        * inputting space separated values
+        * coding sorting algorithms
+        * extracting values from an existing array into a new array
+        
         
         */
+       
+       Scanner sc = new Scanner (System.in);
+       
+       int n = sc.nextInt();
+       int w[] = new int[n];
+       //Array that will hold all the values of the tides
+       for (int i = 0; i < n; i++) {
+           w[i] = sc.nextInt(); 
+       }//Values are input into the array using the Scanner library
+       sc.close(); 
+       
+       
     }
     
 }
