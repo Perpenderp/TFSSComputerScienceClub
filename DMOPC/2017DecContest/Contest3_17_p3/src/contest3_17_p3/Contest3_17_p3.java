@@ -55,9 +55,7 @@ public class Contest3_17_p3 {
                         for (int z = 0; z < num1.size(); z++)
                             System.out.print(num1.get(z)+" ");
                         System.out.println("\n"+w[a]);
-                        a = n-1;
-                        k = max;
-                        i = n-1; 
+                        System.exit(0);
                     }
                     else if (s < w[a])
                         a = max; 
@@ -73,5 +71,6 @@ public class Contest3_17_p3 {
             
             
         }
+        System.exit(0);
     }
 }
