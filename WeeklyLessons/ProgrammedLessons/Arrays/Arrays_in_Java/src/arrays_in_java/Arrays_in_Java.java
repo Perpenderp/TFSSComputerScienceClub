@@ -21,7 +21,7 @@ public class Arrays_in_Java {
         
         - type: int, double, String, etc.
         - size: number of elements in an array
-        - 
+        - var-name: name of variable
         
         */
         
