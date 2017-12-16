@@ -3,7 +3,7 @@ package recursion;
 public class Recursion {
 
     public static void main(String[] args) {
-        //          ***RECURSION***
+        //                              ***RECURSION***
         
         /*
         What is Recursion?
@@ -41,15 +41,53 @@ public class Recursion {
                     return n*fact(n-1);
             }
         
-                * EXAMPLE: in the above code, 
+                * EXAMPLE:  in the above code, if the user calls the method for a number less than 100
+                            the base case for (n == 100) will never be reached and will infinitely call itself
+                            causing the stack overflow error
         
         Direct and Indirect Recursion
+        - Direct: function x that calls itself directly
+        - Indirect: function x that calls another function y that may call x directly or indirectly
         
+            void directExample () {
+                ...code...
+                directExample(); //The method calls itself directly
+                ...code...
+            }
+            
+        
+            void indirectExampleX () {
+                ...code...
+                indirectExampleY ();
+                ...code...
+            }
+        
+            void indirectExampleY () {
+                ...code...
+                indirectExampleX (); //method X calls itself indirectly through method Y
+                ...code...
+            }
         
         Tailed and Non-tailed Recursion
+        - Tailed recursive: method ends with the recursive method call
+        
+            void tailedExample() {
+                ...code...
+                tailedExample (); 
+            }
         
         Memory Allocation
         
+        
+        
+        */      
+    }
+    
+    
+    
+    public void part2 () {
+        /*
+                
         Recursive vs Iterative Programming
         
         Practice Problems
