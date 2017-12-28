@@ -13,7 +13,7 @@ public class S1_2013 {
         boolean complete = false;
         do {
             int length = n.length();
-            for (int i =1; i <length;i++){
+            for (int i =1; i <length;if++){
                 if (n.charAt(0) == n.charAt(i))
                     check = true;
             }
